@@ -1,0 +1,757 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+header{
+  text-align: center;
+}
+
+/* menu*/
+.menutoggle a{
+  color: black;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+.active{
+  width: 200px;
+  transition: width 1s;
+}
+
+.inactive{
+  width: 0;
+  transition: width 1s;
+}
+
+/* navigatie */
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;;
+}
+
+.nav li{
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav li.plaatsRechts{
+  display: none;
+}
+
+ .Logo{
+  flex-grow: 2;
+  text-align: center;
+  margin: 5px;
+  margin-left: 7em;
+  margin-right: 4em;
+}
+
+.Logo img{
+  width: 5%;
+  height: 5%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+ .Heart{
+ flex-grow: 1;
+}
+
+.Heart img{
+  width: 2%;
+  height: 2%;
+  margin-left: 2em;
+}
+
+.Buy{
+  flex-grow: 1;
+ text-align: right;
+}
+
+.Buy img{
+  width: 2%;
+  height: 2%;
+}
+
+
+h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ input{
+  border: 1px solid lightgray ;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0px 20px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  display: inline-block;
+}
+
+/* carousel */
+.carousel-container{
+  max-width: 60% ;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 375px;
+  height: 375px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.image{
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  
+}
+
+.image img.Foto1{
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 25px;
+  margin: 0px auto;
+  background: linear-gradient( 0deg, white 20%, lavender 100%);
+}
+
+.image img.Foto2{
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 25px;
+  margin: 0px auto;
+  background: linear-gradient( 0deg, white 20%, lavender 100%);
+}
+
+.image img.Foto3{
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 25px;
+  margin: 0px auto;
+  background: linear-gradient( 0deg, white 20%, lavender 100%);
+}
+
+.Tekst{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 90%;
+  color: white;
+  text-shadow: black 1px 1px 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+.ShopGone{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-color: black;
+  color: white;
+  border: solid black 1px;
+  padding: 13px;
+}
+
+.ShopGone:hover{
+  cursor: pointer;
+  background-color: rgb(59, 59, 59);
+  border: inherit black 1px;
+}
+
+
+/* Populaire producten */
+.Populair {
+  position: relative;
+  width: 50%;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Populair h2{
+  font-size: 2em;
+}
+
+.Populair p{
+  font-size: 16px;
+}
+
+.Populair img.Nike1{
+  padding: 5px;
+  margin-right: 3em;
+  flex-grow: 1;
+  width: 70%;
+  height: 60%;
+}
+
+.Populair img.Nike1:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.Populair img.Nike2{
+  padding: 5px;
+  flex-grow: 1;
+  width: 70%;
+  height: 60%;
+}
+
+.Populair img.Nike2:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.PopulairH{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
+}
+
+.PopulairH h2{
+ flex-grow: 1;
+ font-size: 20px;
+ padding: 5px;
+ margin: 2px;
+}
+
+.PopulairH h3{
+  flex-grow: 1;
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.PopulairP{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.PopulairP p{
+  margin: 2px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+  width: 30px;
+}
+
+
+/* Nike Fall */
+.NikeFall{
+  position: relative;
+  width: 50%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.NikeFall p{
+  position: absolute ;
+  top: 10%;
+  left: 20%;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  width: 230px;
+}
+
+.NikeFall h2{
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  width: 200px;
+  text-shadow: 2px 1px 1px black;
+}
+
+.NikeFall .ShopNikeF{
+  position: absolute;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  bottom: 20%;
+  left: 20%;
+  max-width: 50em;
+  padding: 1em;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.NikeFall img.NikeF{
+  padding: 25px;
+  flex-direction: column;
+  background: linear-gradient( 0deg, white 20%, rgb(196, 225, 252) 100%);
+}
+
+
+.NikeTrui{
+  display: flex;
+}
+
+.NikeTrui img.NikeF1{
+  flex-grow: 1;
+  padding: 5px;
+}
+
+
+.NikeTrui img.NikeF1:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.NikeTrui img.NikeF2{
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.NikeTrui img.NikeF2:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.NikeH{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
+}
+.NikeH h2{
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 2px;
+  padding: 5px;
+}
+.NikeH h3{
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.NikeP{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.NikeP p{
+  flex-grow: 1;
+  padding: 2px;
+  margin: 5px;
+  width: 30px
+}
+
+.NikeSweat{
+  display: flex;
+}
+
+.NikeSweat img.NikeF3{
+  flex-grow: 1;
+  padding: 5px;
+
+}
+
+.NikeSweat img.NikeF4{
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.NikeSweat img.NikeF3:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.NikeSweat img.NikeF4:hover{
+  cursor: pointer;
+  border: solid 2px rgb(240, 239, 239);
+}
+
+.NikeH2{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
+}
+
+.NikeH2 h2{
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.NikeH2 h3{
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.NikeP2{
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.NikeP2 p{
+  flex-grow: 1;
+  padding: 2px;
+  margin: 5px;
+  width: 30px;
+}
+
+/*Blog einde pagina */
+
+.BlogAnimation {
+ font-size: 24px;
+ position: relative;
+ display: flex;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.BlogAnimation div  {
+  font-size: 24px;
+  padding-left: 80px;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  flex-flow: wrap;
+ }
+
+
+
+@keyframes Blog-animation{
+  0%{
+    transform: none;
+  }
+  10%{
+    transform: scale(1.2, .8);
+  }
+  20%{
+    transform: scale(.6, 1.5) translate(-.25em);
+    color: violet;
+  }
+  30%{
+    transform: scale(1.3, .7);
+  }
+  40%{
+    transform: scale(.9, 1.1);
+  }
+  50%{
+    transform: none;
+  }
+  100%{
+    transform: none;
+  }
+}
+
+section.BlogAnimation{
+ font-weight: 700;
+}
+
+section.BlogAnimation div{
+  width: auto;
+  transform-origin: center bottom;
+  animation-name: Blog-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused; 
+}
+
+section.BlogAnimation div:nth-of-type(1){
+  animation-delay: 0s;
+}
+
+section.BlogAnimation div:nth-of-type(2){
+  animation-delay: .15s;
+}
+
+section.BlogAnimation div:nth-of-type(3){
+  animation-delay: .3s;
+}
+
+section.BlogAnimation div:nth-of-type(4){
+  animation-delay: .45s;
+}
+
+section.BlogAnimation:hover div{
+  animation-play-state: running;
+}
+
+.Blog1 {
+  position: relative;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 1em;
+}
+
+.Blog1 h2{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2px;
+  padding-top: 40px; 
+  text-align: center;
+}
+
+.Blog1 h3{
+  font-size: 18px;
+  width: 400px;
+  margin: 5px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: black underline;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.Blog1 p{
+  font-size: 18px;
+  color: rgb(89, 90, 90);
+  width: 250px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.Blog1 a{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+  padding-bottom:20px;
+}
+
+ a:hover{
+  color: red;
+  border: solid red 1px;
+  border-radius: 2px;
+}
+
+.Blog2{
+  position: relative;
+  width: 50%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Blog2 img{
+  margin-top: 2em;
+}
+
+.Blog2 p{
+  font-size: 18px;
+  color: rgb(89, 90, 90);
+  width: 250px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.Blog2 h4{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+  text-decoration: black underline;
+}
+
+/* Buttons Blog pagina */
+.zoeken a{
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button.Facebook{
+  color: white;
+  background-color: royalblue;
+  border: solid royalblue 6px;
+  width: 8em;
+  text-align: center;
+  margin-right: 2px;
+  transition: 2s;
+}
+
+button.Facebook:hover{
+  background-color: cornflowerblue;
+  color: white;
+  border: 1em solid cornflowerblue;
+  border-radius: 2em;
+}
+
+button.Twitter{
+  color: white;
+  background-color: lightskyblue;
+  border: solid lightskyblue 6px;
+  width: 8em;
+  text-align: center;
+  margin-left: 2px;
+  transition: 2s;
+}
+
+button.Twitter:hover{
+  background-color: lightsteelblue;
+  color: white;
+  border: 1em solid lightsteelblue;
+  border-radius: 2em;
+}
+
+button.Pinterest{
+  color: white;
+  background-color: darkred;
+  border: solid darkred 6px;
+  width: 8em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 6px;
+  margin-left: 25%;
+  margin-right: 25%;
+  transition: 2s;
+}
+
+button.Pinterest:hover{
+  background-color: red;
+  color: white;
+  border: 1em solid red;
+  border-radius: 2em;
+}
+
+.head{
+  display: flex;
+}
+
+.head a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+.head a:hover{
+  color: blueviolet;
+  cursor: pointer;
+  border: none;
+}
+
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+}
+.NewIn{
+  position: relative;
+}
+
+.NewIn h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding: 8px;
+  margin: 2px;
+}
+
+.NewIn p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding: 8px;
+  margin: 2px;
+}
+
+button.Shoppen{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(34, 33, 33);
+  border: solid rgb(34, 33, 33) 1px;
+  width: 6em;
+  height: 2em;
+  margin-bottom: 1em;
+  margin-left: 20em;
+}
+
+@keyframes bons-animation{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+
+div button.Shoppen:hover{
+  animation-name: bons-animation;
+  animation-duration: 1s;
+}
+
+button.Shoppen:hover{
+  cursor: pointer;
+  
+}
+
+/* Recente Artikelen*/
+
+.Recent{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Recent img.Reception{
+  margin-top: 2em;
+}
+.Recent div{
+  border-top: solid 1px lightgray;
+}
+.Recent h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+.Recent h3{
+  font-size: 18px;
+  color: rgb(89, 90, 90);
+  width: 250px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.Recent p{
+  font-size: 13px;
+  color: rgb(89, 90, 90);
+  width: 200px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.Recent h4{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin: 5px;
+  text-decoration: black underline;
+}
+
+.Slide{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel img.GoneImg{
+  max-width: 37fpx;
+}
+
+
+
